@@ -2,6 +2,8 @@
     "name": "Identify Windows",
     "version": "0.0.1",
     "manifest_version": 2,
-    "description": "This is an extension to let us window name",
-      
+    "description": "This is an extension to let us window name"  ,  
+    "browser_action": {
+        "default_popup": "insert_name.html"
+    }
 }
