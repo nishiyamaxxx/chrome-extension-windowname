@@ -1,9 +1,27 @@
 {
-    "name": "Identify Windows",
-    "version": "0.0.1",
-    "manifest_version": 2,
-    "description": "This is an extension to let us window name"  ,  
-    "browser_action": {
-        "default_popup": "insert_name.html"
-    }
+  "name": "Identify Windows",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This is an extension to let us window name" ,
+  "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+  "content_scripts": [
+      {
+          "matches": [
+              "<all_urls>"
+          ],
+          "js": [
+              "inject_scripts.js"
+          ]
+      }
+  ],
+  "web_accessible_resources": [
+    "change_title.js"
+  ],
+  "permissions": [
+    "<all_urls>"
+  ]
 }
