@@ -1,2 +1,3 @@
 var title = document.title;
-document.title = "aaaaaaaaaaaaaaaaaaaaaaa";
+var changedtitle = prompt("ウィンドウ名を入力してください");
+document.title = changedtitle;
